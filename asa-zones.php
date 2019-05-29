@@ -4,7 +4,7 @@
  */
 
 /*
-Plugin Name: tbanys Plugin
+Plugin Name: Asa zones Plugin
 Plugin URI: tbanys.com
 Description: Parkavimo zonos pagal adresus Kauno mieste
 Version: 1.0.0
