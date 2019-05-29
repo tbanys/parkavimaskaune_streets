@@ -1,1 +1,21 @@
- 
+.vs__selected {
+  position: absolute!important;
+}
+
+.vs__selected-options {
+  overflow: hidden!important;
+}
+
+@media (min-width: 1100px) {
+  .v-select {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .colums_6.search_column {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+}

@@ -18,6 +18,8 @@ final class Init
       Base\Enqueue::class,
       Base\PostTypes::class,
       Base\Taxonomies::class,
+      Api\Streets::class,
+      Base\Shortcodes::class,
     ];
   }
 
