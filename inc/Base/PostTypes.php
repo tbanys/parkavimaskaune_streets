@@ -4,7 +4,7 @@
  */
 namespace Inc\Base;
 
-class SettingsLinks
+class PostTypes
 {
 
 	public function register() 
@@ -13,10 +13,10 @@ class SettingsLinks
 	}
 	public function register_kauno_adresai_post_type() 
 	{
-    array(
+    $args = array(
       'labels' => array(
-      'name' => __( 'Kauno Adresai' ),
-      'singular_name' => __( 'Adresas' )
+      'name' => __( 'Kauno gatvės' ),
+      'singular_name' => __( 'Gatvė' )
       ),
       'public' => false,
       'has_archive' => false,
@@ -26,9 +26,10 @@ class SettingsLinks
       'show_in_nav_menus'   => true,
       'show_in_admin_bar'   => true,
       'supports'            => array( 'title', 'editor', 'revisions' ),
-      'rewrite' => array('slug' => 'kauno-adresai'),
+      'rewrite' => array('slug' => 'kauno-street'),
+      'menu_icon'           => 'dashicons-clipboard'
     );
-      register_post_type( 'address', $args );
+      register_post_type( 'kauno_street', $args );
 	}
 }
 
