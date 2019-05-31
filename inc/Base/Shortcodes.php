@@ -38,8 +38,13 @@ class Shortcodes
               <div class="around_rinkleva_block">
 								<div class="zonos_aprasymas" v-bind:style="{'background': selected.color}" style="padding: 19px 10px;">
                   <h4 class="zonos_title">{{selected.zone}}</h4>
-                  <!-- <br>
-                  <p>{{selected.title}}</p> -->
+                  <div class="list_zonos_stovejimo">
+                    <div v-for="item in selected.time_pirce" class="full_list_width">
+                      <img :src="'<?php echo get_template_directory_uri(); ?>/images/valandos/' + item.icon + '.png'"/>
+                      <span>{{item.price}}</span>
+                    </div>
+                  </div>
+                  <p style="margin-top: 15px;">{{selected.working}}</p>
                 </div>
               </div>
             </div>
